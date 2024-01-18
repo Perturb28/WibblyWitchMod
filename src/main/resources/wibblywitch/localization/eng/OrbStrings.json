@@ -1,0 +1,18 @@
+{
+  "${modID}:AbstractSpellOrb": {
+    "NAME": "AbstractSpellOrb",
+    "DESCRIPTION": [
+      "This spell will be #yEvoked in ",
+      " turns. NL ",
+      "This spell will be #yEvoked at the end of your next turn. NL ",
+      "This spell will be #yEvoked at the end of this turn. NL "
+    ]
+  },
+  "${modID}:FireballOrb": {
+    "NAME": "Fireball",
+    "DESCRIPTION": [
+      "#yEvoke: Deal ",
+      " damage to all enemies."
+    ]
+  }
+}

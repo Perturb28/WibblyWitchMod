@@ -1,0 +1,25 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+
+  "${modID}:WyrdStrike": {
+    "NAME": "Wyrd Strike",
+    "DESCRIPTION": "Deal !D! damage twice. NL ${modID}:Delay 2. NL ${modID}:Charge 2."
+  },
+  "${modID}:Fireball": {
+    "NAME": "Fireball",
+    "DESCRIPTION": "${modID}:Prepare Fireball."
+  },
+  "${modID}:FireballSpell": {
+    "NAME": "Fireball Spell",
+    "DESCRIPTION": "${modID}:Delay 2. NL Deals damage to all enemies."
+  }
+}
