@@ -14,12 +14,16 @@
     "NAME": "Wyrd Strike",
     "DESCRIPTION": "Deal !D! damage twice. NL ${modID}:Delay 2. NL ${modID}:Charge 2."
   },
-  "${modID}:Fireball": {
-    "NAME": "Fireball",
-    "DESCRIPTION": "${modID}:Prepare Fireball."
+  "${modID}:PrepareFireball": {
+    "NAME": "Prepare Fireball",
+    "DESCRIPTION": "${modID}:Prepare 1 #yFireball."
   },
   "${modID}:FireballSpell": {
-    "NAME": "Fireball Spell",
+    "NAME": "Fireball",
     "DESCRIPTION": "${modID}:Delay 2. NL Deals damage to all enemies."
+  },
+  "${modID}:AbstractSpellCard": {
+    "NAME": "Abstract Spell",
+    "DESCRIPTION": ""
   }
 }

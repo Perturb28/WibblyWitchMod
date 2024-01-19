@@ -1,22 +1,20 @@
 package wibblywitch.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import wibblywitch.actions.PrepareAction;
+import wibblywitch.cards.spellcards.AbstractSpellCard;
+import wibblywitch.cards.spellcards.FireballSpell;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.orbs.FireballOrb;
 import wibblywitch.util.CardStats;
 
-public class Fireball extends BaseCard {
+public class PrepareFireball extends BaseCard {
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 2;
 
-    public static final String ID = makeID(Fireball.class.getSimpleName());
+    public static final String ID = makeID(PrepareFireball.class.getSimpleName());
     public static final CardStats info = new CardStats(
             WibblyWitch.Enums.CARD_COLOR,
             CardType.SKILL,
@@ -24,7 +22,7 @@ public class Fireball extends BaseCard {
             CardTarget.ENEMY,
             0
     );
-    public Fireball() {
+    public PrepareFireball() {
         super(ID, info);
 
         this.cardsToPreview = new FireballSpell();
@@ -39,6 +37,6 @@ public class Fireball extends BaseCard {
 
     @Override
     public AbstractCard makeCopy(){
-        return new Fireball();
+        return new PrepareFireball();
     }
 }
