@@ -11,8 +11,6 @@ import wibblywitch.orbs.FireballOrb;
 import wibblywitch.util.CardStats;
 
 public class PrepareFireball extends BaseCard {
-    private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 2;
 
     public static final String ID = makeID(PrepareFireball.class.getSimpleName());
     public static final CardStats info = new CardStats(
@@ -26,8 +24,6 @@ public class PrepareFireball extends BaseCard {
         super(ID, info);
 
         this.cardsToPreview = new FireballSpell();
-        setDamage(DAMAGE, UPG_DAMAGE);
-        setBlock(0, 0);
     }
 
     @Override

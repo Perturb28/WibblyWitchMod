@@ -51,9 +51,6 @@ public class AbstractSpellOrb extends AbstractOrb {
 
     @Override
     public void onEndOfTurn() {
-        if (this.passiveAmount == 0) {
-            this.onEvoke();
-        }
     }
 
     @Override

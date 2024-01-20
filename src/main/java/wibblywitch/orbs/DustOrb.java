@@ -16,19 +16,22 @@ import static wibblywitch.WibblyWitchMod.makeID;
 public class DustOrb extends AbstractSpellOrb {
 
 
-    public static final String ABSTRACT_SPELL_ORB_ID = makeID("AbstractSpellOrb");
-    public static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_SPELL_ORB_ID);
+    public static final String ID = makeID("DustOrb");
+    private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
     private AbstractMonster m;
 
+    private final static int BASE_DELAY = 0;
+    public final static int BASE_DAMAGE = 8;
     private int DAMAGE;
+
     public DustOrb(AbstractMonster m) {
-        super(0);
+        super(BASE_DELAY);
 
         this.name = orbStrings.NAME;
         this.img = ImageMaster.ORB_PLASMA;
 
         this.m = m;
-        this.DAMAGE = 8;
+        this.DAMAGE = BASE_DAMAGE;
 
         this.updateDescription();
     }

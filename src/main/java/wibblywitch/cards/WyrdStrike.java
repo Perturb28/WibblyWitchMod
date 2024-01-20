@@ -29,14 +29,13 @@ public class WyrdStrike extends BaseCard{
         super(ID, info);
 
         setDamage(DAMAGE, UPG_DAMAGE);
-        setBlock(0, 0);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ChannelAction(new FireballOrb()));
+        for (int i = 0; i <= p.orbs.get(0).passiveAmount; i++) {
+            addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        }
     }
 
     @Override

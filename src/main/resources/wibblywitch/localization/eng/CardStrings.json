@@ -12,7 +12,7 @@
 
   "${modID}:WyrdStrike": {
     "NAME": "Wyrd Strike",
-    "DESCRIPTION": "Deal !D! damage twice. NL ${modID}:Delay 2. NL ${modID}:Charge 2."
+    "DESCRIPTION": "Deal !D! damage. Repeat as many times as the ${modID}:Delay of your primary orb."
   },
   "${modID}:PrepareFireball": {
     "NAME": "Prepare Fireball",
@@ -20,7 +20,7 @@
   },
   "${modID}:FireballSpell": {
     "NAME": "Fireball",
-    "DESCRIPTION": "${modID}:Delay 2. NL Deals damage to all enemies."
+    "DESCRIPTION": "${modID}:Delay 2. NL Deal !D! damage to all enemies."
   },
   "${modID}:AbstractSpellCard": {
     "NAME": "Abstract Spell",
@@ -40,6 +40,6 @@
   },
   "${modID}:DustSpell": {
     "NAME": "Dust",
-    "DESCRIPTION": "${modID}:Delay 0. NL Deals damage."
+    "DESCRIPTION": "${modID}:Delay 0. NL Deal !D! damage."
   }
 }

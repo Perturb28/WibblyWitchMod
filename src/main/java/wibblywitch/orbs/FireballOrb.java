@@ -27,15 +27,17 @@ public class FireballOrb extends AbstractSpellOrb {
     public static final String ID = makeID("FireballOrb");
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
 
+    private static final int BASE_DELAY = 2;
+    public static final int BASE_DAMAGE = 15;
     private int DAMAGE;
 
     public FireballOrb() {
-        super(2);
+        super(BASE_DELAY);
 
         this.name = orbStrings.NAME;
         this.img = ImageMaster.ORB_LIGHTNING;
 
-        this.DAMAGE = 15;
+        this.DAMAGE = BASE_DAMAGE;
 
         this.updateDescription();
     }
