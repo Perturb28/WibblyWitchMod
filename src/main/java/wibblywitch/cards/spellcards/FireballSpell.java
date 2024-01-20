@@ -9,6 +9,5 @@ public class FireballSpell extends AbstractSpellCard{
 
     public FireballSpell() {
         super(ID);
-        WibblyWitchMod.logger.info(ID);
     }
 }

@@ -26,10 +26,14 @@ public class PrepareAction extends AbstractGameAction {
                 p.channelOrb(this.orbType);
             }
             else {
-                AbstractOrb oldOrb = p.orbs.get(0);
-                if (oldOrb.passiveAmount == 0){
-                    oldOrb.onEvoke();
+                AbstractOrb oldOrb1 = p.orbs.get(0);
+                AbstractOrb oldOrb2 = p.orbs.get(1);
+
+                // Replace primary orb if it has delay 0.
+                if (oldOrb1.passiveAmount == 0){
+                    oldOrb1.onEvoke();
                 }
+
                 p.orbs.set(0, new EmptyOrbSlot());
                 p.channelOrb(this.orbType);
             }

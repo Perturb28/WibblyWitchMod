@@ -15,25 +15,20 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.combat.OrbFlareEffect;
-import wibblywitch.actions.SpellEvokeAction;
 
 import static wibblywitch.WibblyWitchMod.makeID;
 
 public class AbstractSpellOrb extends AbstractOrb {
 
-    protected AbstractMonster target;
-
     public static final String ABSTRACT_SPELL_ORB_ID = makeID("AbstractSpellOrb");
     public static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_SPELL_ORB_ID);
 
-    public AbstractSpellOrb(int delay, AbstractMonster m) {
+    public AbstractSpellOrb(int delay) {
         this.img = ImageMaster.ORB_LIGHTNING;
         this.basePassiveAmount = delay;
         this.passiveAmount = delay;
         this.baseEvokeAmount = delay;
         this.evokeAmount = delay;
-
-        this.target = m;
     }
 
     @Override

@@ -16,7 +16,7 @@
   },
   "${modID}:PrepareFireball": {
     "NAME": "Prepare Fireball",
-    "DESCRIPTION": "${modID}:Prepare 1 #yFireball."
+    "DESCRIPTION": "${modID}:Prepare 1 *Fireball."
   },
   "${modID}:FireballSpell": {
     "NAME": "Fireball",
@@ -25,5 +25,21 @@
   "${modID}:AbstractSpellCard": {
     "NAME": "Abstract Spell",
     "DESCRIPTION": ""
+  },
+  "${modID}:NecromanticPact": {
+    "NAME": "Necromantic Pact",
+    "DESCRIPTION": "Lose 2 HP. NL ${modID}:Quicken 2."
+  },
+  "${modID}:StaffSwipe": {
+    "NAME": "Staff Swipe",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Swap. NL ${modID}:Quicken 1. NL Retain."
+  },
+  "${modID}:PrepareDust": {
+    "NAME": "Prepare Dust",
+    "DESCRIPTION": "${modID}:Prepare 1 *Dust."
+  },
+  "${modID}:DustSpell": {
+    "NAME": "Dust",
+    "DESCRIPTION": "${modID}:Delay 0. NL Deals damage."
   }
 }

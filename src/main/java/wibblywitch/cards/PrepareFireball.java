@@ -19,7 +19,7 @@ public class PrepareFireball extends BaseCard {
             WibblyWitch.Enums.CARD_COLOR,
             CardType.SKILL,
             CardRarity.COMMON,
-            CardTarget.ENEMY,
+            CardTarget.SELF,
             0
     );
     public PrepareFireball() {
@@ -32,7 +32,7 @@ public class PrepareFireball extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new PrepareAction(new FireballOrb(m)));
+        addToBot(new PrepareAction(new FireballOrb()));
     }
 
     @Override

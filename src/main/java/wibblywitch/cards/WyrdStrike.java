@@ -36,7 +36,7 @@ public class WyrdStrike extends BaseCard{
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new ChannelAction(new FireballOrb(m)));
+        addToBot(new ChannelAction(new FireballOrb()));
     }
 
     @Override

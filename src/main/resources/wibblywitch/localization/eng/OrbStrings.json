@@ -14,5 +14,12 @@
       "#yEvoke: Deal ",
       " damage to all enemies."
     ]
+  },
+  "${modID}:DustOrb": {
+    "NAME": "Dust",
+    "DESCRIPTION": [
+      "#yEvoke: Deal ",
+      " damage."
+    ]
   }
 }

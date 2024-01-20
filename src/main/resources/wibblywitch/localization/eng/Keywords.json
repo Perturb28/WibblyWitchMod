@@ -40,5 +40,12 @@
       "quicken"
     ],
     "DESCRIPTION": "Decreases the #yDelay of primary spell."
+  },
+  {
+    "PROPER_NAME": "Swap",
+    "NAMES": [
+      "swap"
+    ],
+    "DESCRIPTION": "Swaps the primary and secondary spell slots."
   }
 ]
