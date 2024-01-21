@@ -24,7 +24,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import wibblywitch.WibblyWitchMod;
-import wibblywitch.orbs.AbstractSpellOrb;
+import wibblywitch.cards.*;
 
 import java.util.ArrayList;
 
@@ -87,11 +87,11 @@ public class WibblyWitch extends CustomPlayer {
         ArrayList<String> retVal = new ArrayList<>();
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
-        retVal.add(Strike_Red.ID);
-        retVal.add(Strike_Red.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Defend_Blue.ID);
-        retVal.add(Neutralize.ID);
+        retVal.add(PrepareFireball.ID);
+        retVal.add(PrepareDust.ID);
+        retVal.add(StaffSwipe.ID);
+        retVal.add(WyrdStrike.ID);
+        retVal.add(NecromanticPact.ID);
 
         return retVal;
     }
