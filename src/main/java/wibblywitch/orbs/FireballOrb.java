@@ -35,7 +35,7 @@ public class FireballOrb extends AbstractSpellOrb {
         super(BASE_DELAY);
 
         this.name = orbStrings.NAME;
-        this.img = ImageMaster.ORB_LIGHTNING;
+        this.img = FIREBALL_IMG;
 
         this.DAMAGE = BASE_DAMAGE;
 
@@ -49,7 +49,7 @@ public class FireballOrb extends AbstractSpellOrb {
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new FireballEvokeAction(AbstractDungeon.player));
+        AbstractDungeon.actionManager.addToTop(new FireballEvokeAction(AbstractDungeon.player, DAMAGE));
     }
 
     @Override

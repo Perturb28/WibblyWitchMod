@@ -1,14 +1,15 @@
 package wibblywitch.cards;
 
+import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import wibblywitch.actions.SpellQuickenAction;
-import wibblywitch.cards.spellcards.AbstractSpellCard;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.util.CardStats;
 
+@NoCompendium
 public class NecromanticPact extends BaseCard {
     public static final String ID = makeID(NecromanticPact.class.getSimpleName());
     public static final CardStats info = new CardStats(

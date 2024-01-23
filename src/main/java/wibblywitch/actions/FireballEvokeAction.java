@@ -6,15 +6,17 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 
 public class FireballEvokeAction extends AbstractGameAction {
-    AbstractPlayer p;
+    private AbstractPlayer p;
+    private int damage;
 
-    public FireballEvokeAction(AbstractPlayer p) {
+    public FireballEvokeAction(AbstractPlayer p, int damage) {
         this.p = p;
+        this.damage = damage;
     }
 
     @Override
     public void update() {
-        this.addToBot(new DamageAllEnemiesAction(p, 15, DamageInfo.DamageType.THORNS, AttackEffect.FIRE));
+        this.addToBot(new DamageAllEnemiesAction(p, damage, DamageInfo.DamageType.THORNS, AttackEffect.FIRE));
         this.isDone = true;
     }
 }

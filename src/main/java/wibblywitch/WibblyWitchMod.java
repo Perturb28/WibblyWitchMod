@@ -3,10 +3,8 @@ package wibblywitch;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
-import basemod.patches.com.megacrit.cardcrawl.characters.AbstractPlayer.TurnStartHooks;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import wibblywitch.cards.BaseCard;
@@ -196,6 +194,7 @@ public class WibblyWitchMod implements
     public static String relicPath(String file) {
         return resourcesFolder + "/relics/" + file;
     }
+    public static String orbPath(String file) { return resourcesFolder + "/orbs/" + file; }
 
 
     //This determines the mod's ID based on information stored by ModTheSpire.

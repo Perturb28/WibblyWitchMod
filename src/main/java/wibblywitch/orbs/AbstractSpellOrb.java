@@ -1,5 +1,6 @@
 package wibblywitch.orbs;
 
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -15,6 +16,8 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.vfx.combat.OrbFlareEffect;
+import wibblywitch.WibblyWitchMod;
+import wibblywitch.patches.IsPrimaryFieldPatch;
 
 import static wibblywitch.WibblyWitchMod.makeID;
 
@@ -22,6 +25,9 @@ public class AbstractSpellOrb extends AbstractOrb {
 
     public static final String ABSTRACT_SPELL_ORB_ID = makeID("AbstractSpellOrb");
     public static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_SPELL_ORB_ID);
+
+    protected static final Texture DUST_IMG = ImageMaster.loadImage(WibblyWitchMod.orbPath("DustOrb.png"));
+    protected static final Texture FIREBALL_IMG = ImageMaster.loadImage(WibblyWitchMod.orbPath("FireballOrb.png"));
 
     public AbstractSpellOrb(int delay) {
         this.img = ImageMaster.ORB_LIGHTNING;
@@ -60,6 +66,9 @@ public class AbstractSpellOrb extends AbstractOrb {
 
     @Override
     public void render(SpriteBatch sb) {
+        if (IsPrimaryFieldPatch.isPrimary.get(this)) {
+            this.scale *= 2;
+        }
         this.shineColor.a = this.c.a / 2.0F;
         sb.setColor(this.shineColor);
         sb.setBlendFunction(770, 1);
@@ -70,6 +79,11 @@ public class AbstractSpellOrb extends AbstractOrb {
         sb.draw(this.img, this.cX - 48.0F, this.cY - 48.0F + this.bobEffect.y, 48.0F, 48.0F, 96.0F, 96.0F, this.scale, this.scale, this.angle / 12.0F, 0, 0, 96, 96, false, false);
         this.renderText(sb);
         this.hb.render(sb);
+    }
+
+    @Override
+    public void triggerEvokeAnimation() {
+
     }
 
     @Override

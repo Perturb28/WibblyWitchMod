@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import wibblywitch.WibblyWitchMod;
 import wibblywitch.actions.DustEvokeAction;
 import wibblywitch.actions.FireballEvokeAction;
 
@@ -28,7 +29,7 @@ public class DustOrb extends AbstractSpellOrb {
         super(BASE_DELAY);
 
         this.name = orbStrings.NAME;
-        this.img = ImageMaster.ORB_PLASMA;
+        this.img = DUST_IMG;
 
         this.m = m;
         this.DAMAGE = BASE_DAMAGE;

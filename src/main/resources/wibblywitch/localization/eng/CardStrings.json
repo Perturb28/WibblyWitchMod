@@ -9,6 +9,14 @@
       "Blizzard is a good example for this."
     ]
   },
+  "${modID}:Strike_Wibbly": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "${modID}:Defend_Wibbly": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! block."
+  },
 
   "${modID}:WyrdStrike": {
     "NAME": "Wyrd Strike",
@@ -41,5 +49,9 @@
   "${modID}:DustSpell": {
     "NAME": "Dust",
     "DESCRIPTION": "${modID}:Delay 0. NL Deal !D! damage."
+  },
+  "${modID}:WibblyForm": {
+    "NAME": "Wibbly Form",
+    "DESCRIPTION": "Start wibbling!"
   }
 }
