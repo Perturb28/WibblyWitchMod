@@ -90,4 +90,7 @@ public class AbstractSpellOrb extends AbstractOrb {
     public void playChannelSFX() {
 
     }
+
+    public void intensify() {
+    }
 }

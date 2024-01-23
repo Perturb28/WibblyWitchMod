@@ -47,5 +47,12 @@
       "swap"
     ],
     "DESCRIPTION": "Swaps the primary and secondary spell slots."
+  },
+  {
+    "PROPER_NAME": "Intensify",
+    "NAMES": [
+      "intensify"
+    ],
+    "DESCRIPTION": "Improves your primary orb as per its Intensify text."
   }
 ]

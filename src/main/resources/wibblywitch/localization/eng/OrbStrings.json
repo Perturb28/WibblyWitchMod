@@ -12,14 +12,18 @@
     "NAME": "Fireball",
     "DESCRIPTION": [
       "#yEvoke: Deal ",
-      " damage to all enemies."
+      " damage to all enemies. NL ",
+      "#yIntensify: Deal ",
+      " additional damage on evoke."
     ]
   },
   "${modID}:DustOrb": {
     "NAME": "Dust",
     "DESCRIPTION": [
       "#yEvoke: Deal ",
-      " damage."
+      " damage. NL ",
+      "#yIntensify: Deal ",
+      " additional damage on evoke."
     ]
   }
 }

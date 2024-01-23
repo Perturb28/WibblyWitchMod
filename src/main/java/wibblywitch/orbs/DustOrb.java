@@ -21,9 +21,10 @@ public class DustOrb extends AbstractSpellOrb {
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
     private AbstractMonster m;
 
-    private final static int BASE_DELAY = 0;
-    public final static int BASE_DAMAGE = 8;
-    private int DAMAGE;
+    private final static int INTENSIFY_DAMAGE = 5;
+    private final static int BASE_DELAY = 2;
+    public final static int BASE_DAMAGE = 20;
+    private int damage;
 
     public DustOrb(AbstractMonster m) {
         super(BASE_DELAY);
@@ -32,7 +33,7 @@ public class DustOrb extends AbstractSpellOrb {
         this.img = DUST_IMG;
 
         this.m = m;
-        this.DAMAGE = BASE_DAMAGE;
+        this.damage = BASE_DAMAGE;
 
         this.updateDescription();
     }
@@ -40,12 +41,18 @@ public class DustOrb extends AbstractSpellOrb {
     @Override
     public void updateDescription() {
         super.updateDescription();
-        this.description += orbStrings.DESCRIPTION[0] + this.DAMAGE + orbStrings.DESCRIPTION[1];
+        this.description += orbStrings.DESCRIPTION[0] + this.damage + orbStrings.DESCRIPTION[1];
+        this.description += orbStrings.DESCRIPTION[2] + INTENSIFY_DAMAGE + orbStrings.DESCRIPTION[3];
     }
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new DustEvokeAction(new DamageInfo(AbstractDungeon.player, this.DAMAGE, DamageInfo.DamageType.THORNS), m));
+        AbstractDungeon.actionManager.addToTop(new DustEvokeAction(new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.THORNS), m));
+    }
+
+    @Override
+    public void intensify() {
+        this.damage += INTENSIFY_DAMAGE;
     }
 
     @Override
