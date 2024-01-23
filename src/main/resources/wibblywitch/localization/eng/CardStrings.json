@@ -34,9 +34,9 @@
     "NAME": "Abstract Spell",
     "DESCRIPTION": ""
   },
-  "${modID}:NecromanticPact": {
-    "NAME": "Necromantic Pact",
-    "DESCRIPTION": "Lose 2 HP. NL ${modID}:Quicken 2."
+  "${modID}:DevilPact": {
+    "NAME": "Devil Pact",
+    "DESCRIPTION": "Lose 2 HP. NL ${modID}:Quicken 1. NL Add a copy of *Devil *Pact into your hand. NL Exhaust."
   },
   "${modID}:StaffSwipe": {
     "NAME": "Staff Swipe",
@@ -51,7 +51,7 @@
     "DESCRIPTION": "${modID}:Delay 0. NL Deal !D! damage."
   },
   "${modID}:WibblyForm": {
-    "NAME": "Wibbly Form",
-    "DESCRIPTION": "Start wibbling!"
+    "NAME": "Wibbly Form!",
+    "DESCRIPTION": "Start wibbling!!!"
   }
 }

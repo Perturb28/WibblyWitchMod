@@ -89,7 +89,7 @@ public class WibblyWitch extends CustomPlayer {
         retVal.add(PrepareDust.ID);
         retVal.add(StaffSwipe.ID);
         retVal.add(WyrdStrike.ID);
-        retVal.add(NecromanticPact.ID);
+        retVal.add(DevilPact.ID);
         retVal.add(Strike_Wibbly.ID);
         retVal.add(Defend_Wibbly.ID);
 
