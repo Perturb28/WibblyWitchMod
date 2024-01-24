@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import java.util.Iterator;
 
 public class SpellPrepareAction extends AbstractGameAction {
-    private AbstractOrb orbType;
+    private final AbstractOrb orbType;
 
     public SpellPrepareAction(AbstractOrb newSpellType){
         this.duration = Settings.ACTION_DUR_FAST;

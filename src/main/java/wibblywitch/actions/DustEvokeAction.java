@@ -3,21 +3,22 @@ package wibblywitch.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class DustEvokeAction extends AbstractGameAction{
-    AbstractMonster m;
-    DamageInfo damageInfo;
+    private final AbstractMonster m;
+    private final int damage;
 
-    public DustEvokeAction(DamageInfo info, AbstractMonster m) {
+    public DustEvokeAction(int damage, AbstractMonster m) {
         this.m = m;
-        this.damageInfo = info;
-        this.attackEffect = AttackEffect.NONE;
+        this.damage = damage;
     }
 
     @Override
     public void update() {
-        this.addToBot(new DamageAction(m, damageInfo, AttackEffect.NONE, true));
+        DamageInfo info = new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS);
+        this.addToBot(new DamageAction(m, info, AttackEffect.BLUNT_HEAVY, true));
         this.isDone = true;
     }
 }

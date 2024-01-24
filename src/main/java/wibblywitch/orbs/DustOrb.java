@@ -16,10 +16,9 @@ import static wibblywitch.WibblyWitchMod.makeID;
 
 public class DustOrb extends AbstractSpellOrb {
 
-
     public static final String ID = makeID("DustOrb");
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
-    private AbstractMonster m;
+    private final AbstractMonster m;
 
     private final static int INTENSIFY_DAMAGE = 5;
     private final static int BASE_DELAY = 2;
@@ -47,7 +46,7 @@ public class DustOrb extends AbstractSpellOrb {
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new DustEvokeAction(new DamageInfo(AbstractDungeon.player, this.damage, DamageInfo.DamageType.THORNS), m));
+        AbstractDungeon.actionManager.addToTop(new DustEvokeAction(this.damage, m));
     }
 
     @Override

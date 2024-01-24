@@ -25,5 +25,14 @@
       "#yIntensify: Deal ",
       " additional damage on evoke."
     ]
+  },
+  "${modID}:SupernovaOrb": {
+    "NAME": "Supernova",
+    "DESCRIPTION": [
+      "#yEvoke: Deal ",
+      " damage. NL",
+      "#yIntensify: Deal ",
+      " additional damage on evoke."
+    ]
   }
 }

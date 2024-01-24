@@ -11,7 +11,7 @@ import wibblywitch.orbs.AbstractSpellOrb;
 import java.util.Collections;
 
 public class SpellSwapAction extends AbstractGameAction {
-    private AbstractPlayer p;
+    private final AbstractPlayer p;
 
     public SpellSwapAction(AbstractPlayer newP) {
         this.duration = Settings.ACTION_DUR_FAST;

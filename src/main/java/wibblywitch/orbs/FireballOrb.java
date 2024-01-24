@@ -51,7 +51,7 @@ public class FireballOrb extends AbstractSpellOrb {
 
     @Override
     public void onEvoke() {
-        AbstractDungeon.actionManager.addToTop(new FireballEvokeAction(AbstractDungeon.player, damage));
+        AbstractDungeon.actionManager.addToTop(new FireballEvokeAction(damage));
     }
 
     @Override

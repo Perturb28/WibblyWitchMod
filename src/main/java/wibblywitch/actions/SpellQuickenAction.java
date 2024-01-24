@@ -5,7 +5,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import wibblywitch.character.WibblyWitch;
 
 public class SpellQuickenAction extends AbstractGameAction {
-    private AbstractPlayer p;
+    private final AbstractPlayer p;
     private final int amount;
 
     public SpellQuickenAction(AbstractPlayer newP, int newAmount) {
