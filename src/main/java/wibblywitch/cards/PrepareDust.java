@@ -3,7 +3,7 @@ package wibblywitch.cards;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import wibblywitch.actions.PrepareAction;
+import wibblywitch.actions.SpellPrepareAction;
 import wibblywitch.cards.spellcards.DustSpell;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.orbs.DustOrb;
@@ -27,7 +27,7 @@ public class PrepareDust extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new PrepareAction(new DustOrb(m)));
+        addToBot(new SpellPrepareAction(new DustOrb(m)));
     }
 
     @Override

@@ -7,6 +7,10 @@
   },
   "${modID}:EssentialSpellPower": {
     "NAME": "essential spell power",
-    "DESCRIPTIONS": ["ok"]
+    "DESCRIPTIONS": ["So much for being invisible."]
+  },
+  "${modID}:Intensify": {
+    "NAME": "Intensify",
+    "DESCRIPTIONS": ["At the end of your turn, Intensify 1"]
   }
 }

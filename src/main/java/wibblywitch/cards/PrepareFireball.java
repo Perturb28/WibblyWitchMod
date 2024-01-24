@@ -3,7 +3,7 @@ package wibblywitch.cards;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import wibblywitch.actions.PrepareAction;
+import wibblywitch.actions.SpellPrepareAction;
 import wibblywitch.cards.spellcards.FireballSpell;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.orbs.FireballOrb;
@@ -27,7 +27,7 @@ public class PrepareFireball extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new PrepareAction(new FireballOrb()));
+        addToBot(new SpellPrepareAction(new FireballOrb()));
     }
 
     @Override

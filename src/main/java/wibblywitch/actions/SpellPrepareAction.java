@@ -9,10 +9,10 @@ import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 
 import java.util.Iterator;
 
-public class PrepareAction extends AbstractGameAction {
+public class SpellPrepareAction extends AbstractGameAction {
     private AbstractOrb orbType;
 
-    public PrepareAction(AbstractOrb newSpellType){
+    public SpellPrepareAction(AbstractOrb newSpellType){
         this.duration = Settings.ACTION_DUR_FAST;
         this.orbType = newSpellType;
     }
