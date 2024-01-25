@@ -5,11 +5,13 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import wibblywitch.cards.BaseCard;
 import wibblywitch.character.WibblyWitch;
-import wibblywitch.powers.EssentialSpellPower;
+import wibblywitch.powers.SpellTickPower;
+import wibblywitch.powers.SupernovaHitPower;
 import wibblywitch.util.GeneralUtils;
 import wibblywitch.util.KeywordInfo;
 import wibblywitch.util.TextureLoader;
@@ -225,7 +227,8 @@ public class WibblyWitchMod implements
 
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
-        WibblyWitchMod.logger.info("attempted to add basespellpower");
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new EssentialSpellPower(AbstractDungeon.player)));
+        AbstractPlayer p = AbstractDungeon.player;
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SpellTickPower(p)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SupernovaHitPower(p)));
     }
 }

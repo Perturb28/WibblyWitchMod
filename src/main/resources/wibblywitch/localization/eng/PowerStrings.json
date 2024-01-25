@@ -5,12 +5,16 @@
       "You are Very Cool and Strong."
     ]
   },
-  "${modID}:EssentialSpellPower": {
-    "NAME": "essential spell power",
+  "${modID}:SpellTickPower": {
+    "NAME": "SpellTickPower",
     "DESCRIPTIONS": ["So much for being invisible."]
   },
   "${modID}:Intensify": {
     "NAME": "Intensify",
     "DESCRIPTIONS": ["At the end of your turn, Intensify 1"]
+  },
+  "${modID}:SupernovaHit": {
+    "NAME": "SupernovaHit",
+    "DESCRIPTIONS": ["so much for being invisible."]
   }
 }

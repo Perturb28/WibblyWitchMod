@@ -53,5 +53,9 @@
   "${modID}:WibblyForm": {
     "NAME": "Wibbly Form!",
     "DESCRIPTION": "Start wibbling!!!"
+  },
+  "${modID}:PrepareSupernova": {
+    "NAME": "Prepare Supernova",
+    "DESCRIPTION": "${modID}:Prepare 1 *Supernova."
   }
 }

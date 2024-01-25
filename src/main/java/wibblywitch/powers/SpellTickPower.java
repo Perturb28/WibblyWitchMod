@@ -19,22 +19,12 @@ import wibblywitch.actions.SpellQuickenAction;
 import static com.evacipated.cardcrawl.mod.stslib.patches.NeutralPowertypePatch.NEUTRAL;
 import static wibblywitch.WibblyWitchMod.makeID;
 
-public class EssentialSpellPower extends AbstractPower implements InvisiblePower {
-    private static PowerStrings getPowerStrings(String ID)
-    {
-        return CardCrawlGame.languagePack.getPowerStrings(ID);
-    }
-    protected AbstractCreature source;
-    protected String[] DESCRIPTIONS;
+public class SpellTickPower extends BasePower implements InvisiblePower {
+    public static final String POWER_ID = makeID("SpellTick");
+    private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
 
-    public EssentialSpellPower(AbstractCreature c) {
-        this.ID = makeID("EssentialSpellPower");
-        PowerStrings strings = getPowerStrings(this.ID);
-        this.name = strings.NAME;
-        this.DESCRIPTIONS = strings.DESCRIPTIONS;
-        this.owner = c;
-        this.source = c;
-        this.type = NEUTRAL;
+    public SpellTickPower(AbstractCreature c) {
+        super(POWER_ID, TYPE, false, c, 1);
     }
 
     public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {

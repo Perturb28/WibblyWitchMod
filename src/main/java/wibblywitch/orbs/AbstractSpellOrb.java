@@ -67,7 +67,7 @@ public class AbstractSpellOrb extends AbstractOrb {
     @Override
     public void render(SpriteBatch sb) {
         if (IsPrimaryFieldPatch.isPrimary.get(this)) {
-            this.scale *= 2;
+            this.scale = 2;
         }
         this.shineColor.a = this.c.a / 2.0F;
         sb.setColor(this.shineColor);

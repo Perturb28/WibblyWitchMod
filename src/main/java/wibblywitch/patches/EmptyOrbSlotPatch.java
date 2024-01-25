@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
+import wibblywitch.WibblyWitchMod;
 import wibblywitch.character.WibblyWitch;
 
 @SpirePatch2(clz = EmptyOrbSlot.class, method = "render")

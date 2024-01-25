@@ -7,31 +7,32 @@ import wibblywitch.actions.SpellPrepareAction;
 import wibblywitch.cards.spellcards.DustSpell;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.orbs.DustOrb;
+import wibblywitch.orbs.SupernovaOrb;
 import wibblywitch.util.CardStats;
 
-public class PrepareDust extends BaseCard {
-    public static final String ID = makeID(PrepareDust.class.getSimpleName());
+import static wibblywitch.WibblyWitchMod.makeID;
+
+public class PrepareSupernova extends BaseCard{
+    public static final String ID = makeID(PrepareSupernova.class.getSimpleName());
     public static final CardStats info = new CardStats(
             WibblyWitch.Enums.CARD_COLOR,
             AbstractCard.CardType.SKILL,
-            CardRarity.COMMON,
-            CardTarget.ENEMY,
+            AbstractCard.CardRarity.RARE,
+            AbstractCard.CardTarget.ENEMY,
             2
     );
 
-    public PrepareDust() {
+    public PrepareSupernova() {
         super(ID, info);
-
-        this.cardsToPreview = new DustSpell();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SpellPrepareAction(new DustOrb(m)));
+        addToBot(new SpellPrepareAction(new SupernovaOrb(m)));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new PrepareDust();
+        return new PrepareSupernova();
     }
 }
