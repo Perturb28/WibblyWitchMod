@@ -3,10 +3,8 @@ package wibblywitch.orbs;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import wibblywitch.actions.CometsEvokeAction;
-import wibblywitch.actions.DustEvokeAction;
+import wibblywitch.actions.spells.CometsEvokeAction;
 
 import static wibblywitch.WibblyWitchMod.makeID;
 

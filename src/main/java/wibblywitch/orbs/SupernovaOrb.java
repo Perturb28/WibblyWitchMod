@@ -1,12 +1,11 @@
 package wibblywitch.orbs;
 
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import wibblywitch.actions.SupernovaEvokeAction;
+import wibblywitch.actions.spells.SupernovaEvokeAction;
 
 import static wibblywitch.WibblyWitchMod.makeID;
 

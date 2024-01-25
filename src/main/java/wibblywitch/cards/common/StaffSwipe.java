@@ -1,4 +1,4 @@
-package wibblywitch.cards;
+package wibblywitch.cards.common;
 
 import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import wibblywitch.actions.SpellQuickenAction;
 import wibblywitch.actions.SpellSwapAction;
+import wibblywitch.cards.BaseCard;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.util.CardStats;
 

@@ -1,16 +1,11 @@
 package wibblywitch.orbs;
 
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import wibblywitch.WibblyWitchMod;
-import wibblywitch.actions.DustEvokeAction;
-import wibblywitch.actions.FireballEvokeAction;
+import wibblywitch.actions.spells.DustEvokeAction;
 
 import static wibblywitch.WibblyWitchMod.makeID;
 

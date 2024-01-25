@@ -1,40 +1,38 @@
-package wibblywitch.cards;
+package wibblywitch.cards.common;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import wibblywitch.actions.SpellPrepareAction;
+import wibblywitch.actions.spells.SpellPrepareAction;
+import wibblywitch.cards.BaseCard;
 import wibblywitch.cards.spellcards.DustSpell;
-import wibblywitch.cards.spellcards.SupernovaSpell;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.orbs.DustOrb;
-import wibblywitch.orbs.SupernovaOrb;
 import wibblywitch.util.CardStats;
 
-import static wibblywitch.WibblyWitchMod.makeID;
-
-public class PrepareSupernova extends BaseCard{
-    public static final String ID = makeID(PrepareSupernova.class.getSimpleName());
+public class PrepareDust extends BaseCard {
+    public static final String ID = makeID(PrepareDust.class.getSimpleName());
     public static final CardStats info = new CardStats(
             WibblyWitch.Enums.CARD_COLOR,
             AbstractCard.CardType.SKILL,
-            AbstractCard.CardRarity.RARE,
-            AbstractCard.CardTarget.ENEMY,
+            CardRarity.COMMON,
+            CardTarget.ENEMY,
             2
     );
 
-    public PrepareSupernova() {
+    public PrepareDust() {
         super(ID, info);
-        this.cardsToPreview = new SupernovaSpell();
+
+        this.cardsToPreview = new DustSpell();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SpellPrepareAction(new SupernovaOrb(m)));
+        addToBot(new SpellPrepareAction(new DustOrb(m)));
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new PrepareSupernova();
+        return new PrepareDust();
     }
 }

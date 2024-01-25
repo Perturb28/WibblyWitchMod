@@ -1,4 +1,4 @@
-package wibblywitch.cards;
+package wibblywitch.cards.uncommon;
 
 import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -7,11 +7,12 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import wibblywitch.cards.BaseCard;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.util.CardStats;
 
 @NoCompendium
-public class WyrdStrike extends BaseCard{
+public class WyrdStrike extends BaseCard {
 
     private static final int DAMAGE = 6;
     private static final int UPG_DAMAGE = 2;

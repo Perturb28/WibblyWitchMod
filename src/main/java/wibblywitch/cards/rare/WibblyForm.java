@@ -1,9 +1,10 @@
-package wibblywitch.cards;
+package wibblywitch.cards.rare;
 
 import com.megacrit.cardcrawl.actions.animations.TalkAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import wibblywitch.cards.BaseCard;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.powers.IntensifyPower;
 import wibblywitch.util.CardStats;

@@ -22,9 +22,13 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import wibblywitch.WibblyWitchMod;
-import wibblywitch.cards.*;
 import wibblywitch.cards.basic.Defend_Wibbly;
 import wibblywitch.cards.basic.Strike_Wibbly;
+import wibblywitch.cards.common.PrepareDust;
+import wibblywitch.cards.common.PrepareFireball;
+import wibblywitch.cards.common.StaffSwipe;
+import wibblywitch.cards.uncommon.DevilPact;
+import wibblywitch.cards.uncommon.WyrdStrike;
 
 import java.util.ArrayList;
 

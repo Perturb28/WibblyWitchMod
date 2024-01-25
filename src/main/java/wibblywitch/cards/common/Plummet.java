@@ -1,4 +1,4 @@
-package wibblywitch.cards;
+package wibblywitch.cards.common;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -6,10 +6,11 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import wibblywitch.actions.PlummetAction;
+import wibblywitch.cards.BaseCard;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.util.CardStats;
 
-public class Plummet extends BaseCard{
+public class Plummet extends BaseCard {
 
     private static final int DAMAGE = 10;
 

@@ -1,19 +1,16 @@
-package wibblywitch.cards;
+package wibblywitch.cards.common;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import wibblywitch.WibblyWitchMod;
-import wibblywitch.actions.SpellPrepareAction;
+import wibblywitch.actions.spells.SpellPrepareAction;
+import wibblywitch.cards.BaseCard;
 import wibblywitch.cards.spellcards.CometsSpell;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.orbs.CometsOrb;
-import wibblywitch.orbs.DustOrb;
 import wibblywitch.util.CardStats;
 
-import static wibblywitch.WibblyWitchMod.makeID;
-
-public class PrepareComets extends BaseCard{
+public class PrepareComets extends BaseCard {
     public static final String ID = makeID(PrepareComets.class.getSimpleName());
     public static final CardStats info = new CardStats(
             WibblyWitch.Enums.CARD_COLOR,
