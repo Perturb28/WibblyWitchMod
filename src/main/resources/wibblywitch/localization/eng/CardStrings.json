@@ -40,7 +40,7 @@
   },
   "${modID}:StaffSwipe": {
     "NAME": "Staff Swipe",
-    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Swap. NL ${modID}:Quicken 1. NL Retain."
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL ${modID}:Swap. NL ${modID}:Quicken 1."
   },
   "${modID}:PrepareDust": {
     "NAME": "Prepare Dust",
@@ -48,7 +48,7 @@
   },
   "${modID}:DustSpell": {
     "NAME": "Dust",
-    "DESCRIPTION": "${modID}:Delay 0. NL Deal !D! damage."
+    "DESCRIPTION": "${modID}:Delay 2. NL Deal !D! damage."
   },
   "${modID}:WibblyForm": {
     "NAME": "Wibbly Form!",
@@ -57,5 +57,17 @@
   "${modID}:PrepareSupernova": {
     "NAME": "Prepare Supernova",
     "DESCRIPTION": "${modID}:Prepare 1 *Supernova."
+  },
+  "${modID}:SupernovaSpell": {
+    "NAME": "Supernova",
+    "DESCRIPTION": "${modID}:Delay 4. NL Deal !D! damage. NL ${modID}:Intensify 1 whenever you play an attack of cost at least 1."
+  },
+  "${modID}:PrepareComets": {
+    "NAME": "Prepare Comets",
+    "DESCRIPTION": "${modID}:Prepare 1 *Comets."
+  },
+  "${modID}:CometsSpell": {
+    "NAME": "Comets",
+    "DESCRIPTION": "${modID}:Delay 2. NL Deal !D! damage to a random enemy !M! times."
   }
 }

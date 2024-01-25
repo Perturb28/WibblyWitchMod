@@ -18,7 +18,7 @@ public class Strike_Wibbly extends BaseCard {
     public static final CardStats info = new CardStats(
             WibblyWitch.Enums.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.COMMON,
+            CardRarity.BASIC,
             CardTarget.ENEMY,
             1
     );

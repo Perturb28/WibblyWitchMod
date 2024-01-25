@@ -28,6 +28,7 @@ public class AbstractSpellOrb extends AbstractOrb {
 
     protected static final Texture DUST_IMG = ImageMaster.loadImage(WibblyWitchMod.orbPath("DustOrb.png"));
     protected static final Texture FIREBALL_IMG = ImageMaster.loadImage(WibblyWitchMod.orbPath("FireballOrb.png"));
+    protected static final Texture COMETS_IMG = ImageMaster.loadImage(WibblyWitchMod.orbPath("CometsOrb.png"));
 
     public AbstractSpellOrb(int delay) {
         this.img = ImageMaster.ORB_LIGHTNING;

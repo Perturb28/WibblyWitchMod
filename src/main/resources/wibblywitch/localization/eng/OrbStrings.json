@@ -30,9 +30,18 @@
     "NAME": "Supernova",
     "DESCRIPTION": [
       "#yEvoke: Deal ",
-      " damage. NL",
+      " damage. NL ",
       "#yIntensify: Deal ",
-      " additional damage on evoke."
+      " additional damage on evoke. NL #yIntensify 1 whenever you play an attack of cost at least 1."
+    ]
+  },
+  "{modID}: CometsOrb": {
+    "NAME": "Comets",
+    "DESCRIPTION": [
+      "#yEvoke: Deal ",
+      " damage ",
+      " times. NL ",
+      "#yIntensify: Deal damage an additional time."
     ]
   }
 }
