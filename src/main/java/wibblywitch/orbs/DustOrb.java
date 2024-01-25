@@ -52,6 +52,7 @@ public class DustOrb extends AbstractSpellOrb {
     @Override
     public void intensify() {
         this.damage += INTENSIFY_DAMAGE;
+        updateDescription();
     }
 
     @Override

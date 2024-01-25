@@ -15,8 +15,8 @@ public class CometsOrb extends AbstractSpellOrb{
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
 
     private final static int BASE_DELAY = 2;
-    public final static int BASE_DAMAGE = 4;
-    public final static int BASE_COUNT = 6;
+    public final static int BASE_DAMAGE = 6;
+    public final static int BASE_COUNT = 3;
     private int count = BASE_COUNT;
 
     public CometsOrb() {
@@ -40,6 +40,7 @@ public class CometsOrb extends AbstractSpellOrb{
     @Override
     public void intensify() {
         this.count += 1;
+        updateDescription();
     }
 
     @Override

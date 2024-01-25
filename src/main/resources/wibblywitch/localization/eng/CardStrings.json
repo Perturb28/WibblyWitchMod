@@ -69,5 +69,9 @@
   "${modID}:CometsSpell": {
     "NAME": "Comets",
     "DESCRIPTION": "${modID}:Delay 2. NL Deal !D! damage to a random enemy !M! times."
+  },
+  "${modID}:Plummet": {
+    "NAME": "Plummet",
+    "DESCRIPTION": "Deal !D! damage and apply 1 vulnerable. NL If the last card played this combat was a Skill, gain [E]."
   }
 }

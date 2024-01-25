@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import wibblywitch.WibblyWitchMod;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.orbs.SupernovaOrb;
 
@@ -27,6 +28,7 @@ public class SupernovaHitPower extends BasePower implements InvisiblePower {
         if (p instanceof WibblyWitch) {
             if (p.orbs.get(0) instanceof SupernovaOrb && card.type == AbstractCard.CardType.ATTACK && card.cost >= 2) {
                 ((SupernovaOrb) p.orbs.get(0)).intensify();
+                WibblyWitchMod.logger.info("supernova power");
             }
         }
     }

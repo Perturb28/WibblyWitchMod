@@ -1,8 +1,9 @@
-package wibblywitch.cards;
+package wibblywitch.cards.basic;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import wibblywitch.cards.BaseCard;
 import wibblywitch.character.WibblyWitch;
 import wibblywitch.util.CardStats;
 

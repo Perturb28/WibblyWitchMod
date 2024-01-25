@@ -32,7 +32,7 @@
       "#yEvoke: Deal ",
       " damage. NL ",
       "#yIntensify: Deal ",
-      " additional damage on evoke. NL #yIntensify 1 whenever you play an attack of cost at least 1."
+      " additional damage on evoke. NL #yIntensify 1 whenever you play an attack of cost at least 2."
     ]
   },
   "{modID}: CometsOrb": {
