@@ -15,6 +15,7 @@ public class CometsEvokeAction extends AbstractGameAction {
     }
     @Override
     public void update() {
+        // Deals multiple damage instances to random enemies.
         AbstractCreature m = AbstractDungeon.getRandomMonster();
         if (m != null) {
             for (int i = 0; i < count; i++) {

@@ -16,6 +16,7 @@ public class SpellIntensifyAction extends AbstractGameAction {
     @Override
     public void update() {
         AbstractPlayer p = AbstractDungeon.player;
+        // Don't try to get ironclad's orbs, he is very self-conscious
         if (p instanceof WibblyWitch) {
             AbstractOrb o = p.orbs.get(0);
             if (o instanceof AbstractSpellOrb) {

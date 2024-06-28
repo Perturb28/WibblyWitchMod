@@ -14,6 +14,7 @@ public class FireballEvokeAction extends AbstractGameAction {
 
     @Override
     public void update() {
+        // Deals damage to all enemies.
         this.addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS, AttackEffect.FIRE));
         this.isDone = true;
     }

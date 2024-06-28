@@ -17,6 +17,7 @@ public class SupernovaEvokeAction extends AbstractGameAction{
 
     @Override
     public void update() {
+        // Deals damage to a single enemy but with SMASH effect!
         DamageInfo info = new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS);
         this.addToBot(new DamageAction(m, info, AttackEffect.SMASH, true));
         this.isDone = true;

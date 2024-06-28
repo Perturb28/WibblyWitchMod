@@ -15,6 +15,7 @@ public class SpellQuickenAction extends AbstractGameAction {
     @Override
     public void update() {
         if (p.getClass() == WibblyWitch.class) {
+            // Quickening is handled by the WibblyWitch class, because it will be easier to implement powers.
             ((WibblyWitch) p).quicken(amount);
         }
         this.isDone = true;

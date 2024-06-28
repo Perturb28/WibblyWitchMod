@@ -9,12 +9,16 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.combat.MiracleEffect;
 
+import java.util.ArrayList;
+
 public class PlummetAction extends AbstractGameAction {
     public PlummetAction() {
     }
 
     public void update() {
-        if (AbstractDungeon.actionManager.cardsPlayedThisCombat.size() >= 2 && (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(AbstractDungeon.actionManager.cardsPlayedThisCombat.size() - 2)).type == AbstractCard.CardType.SKILL) {
+        // Give energy back if the card played previously was a skill.
+        ArrayList<AbstractCard> played = AbstractDungeon.actionManager.cardsPlayedThisCombat;
+        if (played.size() >= 2 && (played.get(played.size() - 2)).type == AbstractCard.CardType.SKILL) {
             this.addToTop(new GainEnergyAction(1));
             if (Settings.FAST_MODE) {
                 this.addToTop(new VFXAction(new MiracleEffect(Color.CYAN, Color.PURPLE, "ATTACK_MAGIC_SLOW_1"), 0.0F));

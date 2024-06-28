@@ -1,6 +1,7 @@
 package wibblywitch.cards.spellcards;
 
 import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen.NoCompendium;
+import wibblywitch.orbs.CometsOrb;
 
 @NoCompendium
 public class CometsSpell extends AbstractSpellCard{
@@ -8,7 +9,8 @@ public class CometsSpell extends AbstractSpellCard{
 
     public CometsSpell() {
         super(ID);
-        setDamage(4);
-        setMagic(6);
+        setDamage(CometsOrb.BASE_DAMAGE);
+        // The magic number in this case is used so the description knows how many times it hits.
+        setMagic(CometsOrb.BASE_COUNT);
     }
 }

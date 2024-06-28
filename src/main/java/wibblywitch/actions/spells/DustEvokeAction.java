@@ -17,6 +17,7 @@ public class DustEvokeAction extends AbstractGameAction{
 
     @Override
     public void update() {
+        // Deals damage to a single enemy.
         DamageInfo info = new DamageInfo(AbstractDungeon.player, damage, DamageInfo.DamageType.THORNS);
         this.addToBot(new DamageAction(m, info, AttackEffect.BLUNT_HEAVY, true));
         this.isDone = true;

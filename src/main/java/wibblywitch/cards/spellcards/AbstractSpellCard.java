@@ -14,6 +14,8 @@ import static wibblywitch.WibblyWitchMod.characterPath;
 
 @NoCompendium
 public class AbstractSpellCard extends BaseCard {
+    // This spell cards are the ones that show up when you hover a prepare spell. They only exist to be looked at.
+
     public static final String ID = makeID(AbstractSpellCard.class.getSimpleName());
     public static final CardStats info = new CardStats(
             WibblyWitch.Enums.CARD_COLOR,
@@ -35,7 +37,7 @@ public class AbstractSpellCard extends BaseCard {
 
     @Override
     public void render(SpriteBatch sb) {
-        // Cursed solution, avert your eyes.
+        // Cursed solution, avert your eyes. I just change the text string before and after rendering every frame.
         String oldText = TEXT[1];
         TEXT[1] = "Spell";
         if (!Settings.hideCards) {

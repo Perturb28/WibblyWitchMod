@@ -20,6 +20,7 @@ public class SpellPrepareAction extends AbstractGameAction {
     @Override
     public void update() {
         // Might need moving or rethinking?
+        // I feel like this class does so much with the orbs array that it breaks some encapsulation principles?
         AbstractPlayer p = AbstractDungeon.player;
         if (this.duration == Settings.ACTION_DUR_FAST) {
             if (p.hasEmptyOrb()) {

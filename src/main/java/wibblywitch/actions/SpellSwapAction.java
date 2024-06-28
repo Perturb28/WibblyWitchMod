@@ -19,9 +19,8 @@ public class SpellSwapAction extends AbstractGameAction {
     }
     @Override
     public void update() {
-        System.out.println(p.orbs);
         Collections.swap(p.orbs, 0, 1);
-        System.out.println(p.orbs);
+        // Not only does the player class need to know the orb positions, so must the orbs themselves!
         p.orbs.get(0).setSlot(0, 2);
         p.orbs.get(1).setSlot(1,2);
         this.isDone = true;
